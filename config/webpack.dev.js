@@ -38,9 +38,8 @@ const devConfig = {
         hot: true,
         open: true,
         port: 3001,
-        "/api": {
-          target: "http://localhost:3000",
-          pathRewrite: {"^/api" : ""}
+        proxy: {
+          "/risk": { target: 'http://192.168.3.26:8843', changeOrigin: true },
         }
     },
     module: {

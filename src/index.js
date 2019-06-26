@@ -2,8 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 import App from './app';
+import sayHello from './hello.ts'
 
-console.log(App)
+console.log(App);
+sayHello('world');
 const renderApp = (App) => ReactDOM.render(
   <AppContainer>
     <App />
